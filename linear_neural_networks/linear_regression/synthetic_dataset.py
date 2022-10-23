@@ -9,8 +9,8 @@ def synthetic_data(w, b, num_samples):
     y = Xw + b + noise
     
     Args
-    w: float (a number)
-    b: float (bais)
+    w: torch.tensor (weights)
+    b: torch.tensor (bais)
     num_samples: int (number of examples in the dataset)
     
     return
@@ -27,6 +27,6 @@ if __name__ == "__main__":
     features, targets = synthetic_data(true_w, true_b, 1000)
     print("features shape: {}, labels shape: {}".format(features.shape, targets.shape))
 
-    
+
 
 
