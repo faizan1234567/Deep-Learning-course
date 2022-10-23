@@ -24,8 +24,10 @@ def synthetic_data(w, b, num_samples):
 if __name__ == "__main__":
     true_w = torch.tensor([2, -3.4])
     true_b = torch.tensor([3.4])
+    n = 4
     features, targets = synthetic_data(true_w, true_b, 1000)
     print("features shape: {}, labels shape: {}".format(features.shape, targets.shape))
+    print("fourth example:\n features: {}\n labels {}".format(features[n].numpy().squeeze(), targets[n].numpy().squeeze()))
 
 
 
