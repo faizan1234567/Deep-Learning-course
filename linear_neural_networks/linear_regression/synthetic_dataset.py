@@ -41,7 +41,7 @@ if __name__ == "__main__":
     plt.title('Synthetic dataset')
     plt.grid()
     plt.show()
-    
+
     print('The end!!')
 
 
