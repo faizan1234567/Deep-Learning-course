@@ -1,6 +1,6 @@
 import numpy as np
 
-         
+#helper functions    
 def sigmoid_test(target):
     x = np.array([0, 2])
     output = target(x)
